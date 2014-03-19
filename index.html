@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<style>
+	body{
+		margin-top: 18px;
+	}
+		.selected{
+			background: #D9EDF7;
+		}
+		
+
+		#move-to{
+			position: absolute;
+			display:block;
+			left: 348px;
+			top:48px;
+			background-color: #FFFFFF;
+  			border: 1px solid;
+  			width: 80px;
+  			z-index: 30;
+
+		}
+		#move-to ul{
+			list-style: none;
+			list-style-image: none;
+			margin: 0px;
+		}
+		toolbar{
+			margin-bottom: 13px;
+		}
+
+		list #mail-list{
+			background: #fff;
+		}
+
+#new_mail {
+    width: 100px;
+    margin-bottom: 18px;
+}
+	</style>
+	<title>CanJS SPA Demo</title>
+</head>
+<body>
+	<div class="container-fluid" id="app">
+		
+		
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/canjs/can.jquery.js"></script>
+	<script type="text/javascript" src="js/canjs/can.object.js"></script>
+	<script type="text/javascript" src="js/canjs/can.fixture.js"></script>
+	<script type="text/javascript" src="js/canjs/can.map.setter.js"></script>
+	
+	
+
+	<script type="text/javascript" src="js/app/fixtures/folders.js"></script>
+	<script type="text/javascript" src="js/app/fixtures/emails.js"></script>
+	<script type="text/javascript" src="js/app/models/email.js"></script>
+	<script type="text/javascript" src="js/app/models/folder.js"></script>
+	<script type="text/javascript" src="js/app/mail/scope.js"></script>
+
+	
+	<script type="text/javascript" src="js/app/mail/mails_app.js"></script>
+	<script type="text/javascript" src="js/app/mail/components/mails.js"></script>
+	<script type="text/javascript" src="js/app/mail/components/toolbar.js"></script>
+	<script type="text/javascript" src="js/app/mail/components/list.js"></script>
+	<script type="text/javascript" src="js/app/mail/components/folders.js"></script>
+	<script type="text/javascript" src="js/app/main.js"></script>
+</body>
+</html>

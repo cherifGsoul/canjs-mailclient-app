@@ -1,0 +1,30 @@
+
+<mails class="row-fluid">
+<div class="span2">
+				<div class="sidebar" id="folders">
+					
+					<folders>
+						 <button id="new_mail" class="btn compose" data-toggle="dropdown">New</button>
+						<ul id="folders" class="nav nav-list">
+	{{#each folders}}
+						<li id="{{id}}" class="{{#isActive}}active{{/isActive}} folder-item" {{data 'folder'}}>
+							<a href="javascript://"><i class="{{icon}}"></i>
+							{{name}}<span class="pull-right">{{map.countByFolder}}</span></a></li>
+{{/each}}
+					</ul>
+
+					</folders>
+					
+				</div>
+			</div>
+			
+				
+					<toolbar map='map' class="span10"></toolbar>
+				
+				<list emails="map.displayedEmails" class="span10">
+
+</list>
+
+			
+		</mails>
+
