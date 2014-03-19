@@ -7,9 +7,6 @@
             }
         },
         events: {
-            init: function(el, opts) {
-                console.log(opts);
-            },
             '{can.route} folder': function(route, folder) {
                 this.scope.attr('map.folder', route.attr('folder'));
             },
