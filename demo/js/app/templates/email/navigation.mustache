@@ -1,0 +1,8 @@
+
+<ul id="folders" class="nav nav-list">
+	{{#each folders}}
+						<li id="{{id}}" class="{{#isActive}}active{{/isActive}} folder-item" {{data 'folder'}}>
+							<a href="javascript://"><i class="{{icon}}"></i>
+							{{name}}</li></a>
+{{/each}}
+					</ul>

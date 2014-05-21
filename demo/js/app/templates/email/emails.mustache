@@ -1,0 +1,21 @@
+{{#if emails.length}}
+	<table id="mail-list" class="hero-unit table table-hover">
+		<tbody>
+			{{#each emails}}
+				<tr can-click="map.toogle" {{#isSelected}}class='selected'{{/isSelected}} {{data 'email'}}>
+					{{#important}}
+					<td class="span1"><span class="label label-important">Important</span></td>
+					{{/important}}
+					{{^important}}
+					<td class="span1"><span>&nbsp;</span></td>
+					{{/important}}
+					<td class="span2">{{name}}</td>
+					<td class="span9"><span>{{format subject}}</span> - <span><a href="javascript://">{{format message}}</a></span> </td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+
+{{else}}
+	{{emptyMessage}}
+{{/if}}

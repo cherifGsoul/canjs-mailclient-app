@@ -1,0 +1,31 @@
+	<div id="mail-panel" class="span10">
+				<div id="mail-controls">
+<div class="btn-group">
+						<button class="btn move-action mail-action" {{^map.selected.length}}disabled="disabled"{{/selected.length}} id="trash">
+							<i class="icon-trash"></i>
+							Delete</button>
+						<button can-click="toogleMove" class="btn mail-action" {{^map.selected.length}}disabled="disabled"{{/selected.length}} id="move">
+							<i class="icon-move"></i>
+							Move</button>
+							
+						<button class="btn mail-action" {{#isOneSelected map.selected.length}}disabled="disabled"{{/isOneSelected}}>
+							<i class="icon-arrow-right"></i>
+							Forward</button>
+						<button class="btn mail-action" {{#isOneSelected map.selected.length}}disabled="disabled"{{/isOneSelected}}>
+							<i class="icon-pencil"></i>
+							Reply</button>
+					</div>
+				</div>
+
+			</div>
+			{{#if restFolders.length}}
+				<div id="move-to">
+		<ul class="nav nav-list">					
+								
+									{{#each restFolders}}
+										<li class="move-action" id="{{id}}"><a href="javascript://">{{name}}</a></li>
+									{{/each}}
+									
+							</ul>
+							</div>
+							{{/if}}
